@@ -10,15 +10,15 @@ module RoseLogo
   module_function
 
   def attached?(account)
-    account.present? && account.rose_logo.attached?
+    account.present? && account.logo.attached?
   end
 
   def url(account)
-    ActiveStorage::Blob.proxy_url(account.rose_logo.blob)
+    ActiveStorage::Blob.proxy_url(account.logo.blob)
   end
 
   def io(account)
-    StringIO.new(account.rose_logo.download)
+    StringIO.new(account.logo.download)
   end
 
   def banner_account(assigns)

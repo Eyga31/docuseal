@@ -13,7 +13,7 @@ class RoseLogosController < ApplicationController
       return redirect_to settings_personalization_path, alert: 'Logo refusé : PNG ou JPEG, 2 Mo maximum.'
     end
 
-    current_account.rose_logo.attach(io: file.tempfile, filename: file.original_filename, content_type:)
+    current_account.logo.attach(io: file.tempfile, filename: file.original_filename, content_type:)
 
     redirect_to settings_personalization_path, notice: I18n.t('changes_have_been_saved')
   end
@@ -21,7 +21,7 @@ class RoseLogosController < ApplicationController
   def destroy
     authorize!(:manage, current_account)
 
-    current_account.rose_logo.purge
+    current_account.logo.purge
 
     redirect_to settings_personalization_path, notice: I18n.t('changes_have_been_saved')
   end

@@ -22,7 +22,7 @@ class Account < ApplicationRecord
   attribute :uuid, :string, default: -> { SecureRandom.uuid }
 
   has_many :users, dependent: :destroy
-  has_one_attached :rose_logo # Ajout Agence Rose : logo de l'entreprise
+  has_one_attached :logo # Ajout Agence Rose : logo de l'entreprise
   has_many :encrypted_configs, dependent: :destroy
   has_many :account_configs, dependent: :destroy
   has_many :email_messages, dependent: :destroy
