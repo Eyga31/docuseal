@@ -3,7 +3,7 @@
 Fork de [docusealco/docuseal](https://github.com/docusealco/docuseal) (AGPL v3), branche `rose`.
 Tourne sur docuseal.os.agencerose.com. La mention DocuSeal reste dans l'interface (LICENSE_ADDITIONAL_TERMS).
 
-Version DocuSeal de base en production : 3.3.5
+Version DocuSeal de base en production : 3.3.6
 
 ## Ajouts (fichiers marqués « Ajout Agence Rose »)
 - Logo de l'entreprise : `lib/rose_logo.rb`, `app/controllers/rose_logos_controller.rb`, `app/views/rose_logos/`,
