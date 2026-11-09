@@ -103,7 +103,10 @@ module Submitters
       end
     end
 
-    def load_logo(_submitter)
+    def load_logo(submitter)
+      # Ajout Agence Rose : logo de l'entreprise s'il existe
+      return RoseLogo.io(submitter.account) if RoseLogo.attached?(submitter.account)
+
       PdfIcons.stamp_logo_io
     end
   end

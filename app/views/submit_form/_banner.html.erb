@@ -1,3 +1,8 @@
 <div class="flex mt-4">
-  <%= render 'submit_form/docuseal_logo' %>
+  <% rose_account = RoseLogo.banner_account(submitter: @submitter, submission: @submission, template: @template) %>
+  <% if RoseLogo.attached?(rose_account) %>
+    <%= render 'rose_logos/banner', account: rose_account %>
+  <% else %>
+    <%= render 'submit_form/docuseal_logo' %>
+  <% end %>
 </div>

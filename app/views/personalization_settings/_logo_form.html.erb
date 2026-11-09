@@ -1,1 +1,15 @@
-<%= render 'logo_placeholder' %>
+<%# Ajout Agence Rose (AGPL v3) : remplace l'emplacement « Debloquer avec DocuSeal Pro » %>
+<p class="mb-3"><%= t('display_your_company_name_and_logo_when_signing_documents') %></p>
+<% if RoseLogo.attached?(current_account) %>
+  <div class="flex items-center gap-4 mb-4">
+    <img src="<%= RoseLogo.url(current_account) %>" alt="<%= current_account.name %>" class="h-12 w-auto">
+    <%= button_to settings_rose_logo_path, method: :delete, class: 'btn btn-outline btn-error btn-sm', data: { turbo_confirm: t('are_you_sure_') } do %>
+      <%= t('remove') %>
+    <% end %>
+  </div>
+<% end %>
+<%= form_with url: settings_rose_logo_path, method: :post, html: { enctype: 'multipart/form-data', class: 'space-y-3' } do |f| %>
+  <%= f.file_field :logo, accept: 'image/png,image/jpeg', required: true, class: 'file-input file-input-bordered w-full' %>
+  <p class="text-sm opacity-70">PNG ou JPEG, 2 Mo maximum.</p>
+  <%= f.button t('save'), class: 'base-button' %>
+<% end %>

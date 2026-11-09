@@ -24,6 +24,7 @@ Rails.application.routes.draw do
   end
 
   namespace :api, defaults: { format: :json } do
+    post 'templates/pdf', to: 'rose_templates_pdf#create' # Ajout Agence Rose
     resource :user, only: %i[show]
     resources :submitter_form_views, only: %i[create]
     resources :submitters, only: %i[index show update]
@@ -202,6 +203,7 @@ Rails.application.routes.draw do
     resources :integration_users, only: %i[index], path: 'users/:status', controller: 'users',
                                   defaults: { status: :integration }
     resource :personalization, only: %i[show create], controller: 'personalization_settings'
+    resource :rose_logo, only: %i[create destroy], controller: 'rose_logos' # Ajout Agence Rose
     resources :webhooks, only: %i[index show new create update destroy], controller: 'webhook_settings' do
       post :resend
 

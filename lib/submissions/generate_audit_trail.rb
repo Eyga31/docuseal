@@ -564,7 +564,12 @@ module Submissions
       !submission.source.in?(%w[embed api])
     end
 
-    def add_logo(column, _submission = nil)
+    def add_logo(column, submission = nil)
+      # Ajout Agence Rose : logo de l'entreprise s'il existe
+      if submission && RoseLogo.attached?(submission.account)
+        return column.image(RoseLogo.io(submission.account), height: 40, position: :float)
+      end
+
       column.image(PdfIcons.logo_io, width: 40, height: 40, position: :float)
 
       column.formatted_text([{ text: 'DocuSeal',

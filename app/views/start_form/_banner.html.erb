@@ -1,1 +1,6 @@
-<%= render 'start_form/docuseal_logo' %>
+<% rose_account = RoseLogo.banner_account(submitter: @submitter, submission: @submission, template: @template) %>
+<% if RoseLogo.attached?(rose_account) %>
+  <div class="flex justify-center"><%= render 'rose_logos/banner', account: rose_account %></div>
+<% else %>
+  <%= render 'start_form/docuseal_logo' %>
+<% end %>

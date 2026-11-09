@@ -6,6 +6,9 @@
     <style></style>
   </head>
   <body dir="<%= TextUtils.rtl?(yield) ? 'rtl' : 'auto' %>">
+    <% if @current_account && RoseLogo.attached?(@current_account) %>
+      <p><img src="<%= RoseLogo.url(@current_account) %>" alt="<%= @current_account.name %>" height="48" style="height:48px;width:auto"></p>
+    <% end %>
     <%= yield %>
     <%= render partial: 'shared/mailer_attribution' %>
   </body>
