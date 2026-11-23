@@ -656,6 +656,7 @@ en: &en
   hmac_signing_secret: HMAC Signing Secret
   hmac_signature_header_hint_html: 'Each request is signed with the %{header} header: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} submissions have been created.'
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "This document is being processed. Refresh the page to view the final version."
   sms_length_cant_be_longer_than_120_bytes: SMS length can't be longer than 120 bytes
   connected_successfully: Connected successfully.
   user_nameid_not_found: 'User %{nameid} not found.'
@@ -835,6 +836,9 @@ en: &en
   manage_subscription: Manage Subscription
   docuseal_version_security_release_is_available: "DocuSeal v%{version} security release is available."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Click here</a> to view the instructions and update your app.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Your Pro subscription includes <b>%{count}</b> user seat, but there are <b>%{users}</b> active users in your account.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Upgrade</a> your plan to cover <b>%{users}</b> users or remove inactive users via <a href="%{settings_url}" class="link font-bold">Settings</a>.'
+    other: 'Your Pro subscription includes <b>%{count}</b> user seats, but there are <b>%{users}</b> active users in your account.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Upgrade</a> your plan to cover <b>%{users}</b> users or remove inactive users via <a href="%{settings_url}" class="link font-bold">Settings</a>.'
   submission_created_by_email_html: '<b>Submission created</b> by %{email}'
   submission_created_by_email_via_source_html: '<b>Submission created</b> by %{email} via %{source}'
   submission_created_via_source_html: '<b>Submission created</b> via %{source}'
@@ -1084,6 +1088,8 @@ en: &en
     select_field: Select Field
     select_column: Select Column
     new_field_mapping: New Field Mapping
+    add_mapping: Add Mapping
+    variables: Variables
     total_entries: Total entries
     upload_csv_or_xlsx_spreadsheet: Upload CSV or XLSX Spreadsheet
     click_to_upload: Click to Upload
@@ -1821,6 +1827,7 @@ es: &es
   hmac_signing_secret: Secreto de firma HMAC
   hmac_signature_header_hint_html: 'Cada solicitud se firma con el encabezado %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} envíos han sido creados.'
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Este documento se está procesando. Actualiza la página para ver la versión final."
   sms_length_cant_be_longer_than_120_bytes: La longitud del SMS no puede ser mayor a 120 bytes.
   connected_successfully: Conectado con éxito.
   user_nameid_not_found: 'Usuario %{nameid} no encontrado.'
@@ -1997,6 +2004,9 @@ es: &es
   manage_subscription: Gestionar Suscripción
   docuseal_version_security_release_is_available: "La versión de seguridad DocuSeal v%{version} está disponible."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Haz clic aquí</a> para ver las instrucciones y actualizar tu aplicación.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Tu suscripción Pro incluye <b>%{count}</b> plaza de usuario, pero hay <b>%{users}</b> usuarios activos en tu cuenta.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Amplía</a> tu plan para cubrir <b>%{users}</b> usuarios o elimina los usuarios inactivos en la <a href="%{settings_url}" class="link font-bold">Configuración</a>.'
+    other: 'Tu suscripción Pro incluye <b>%{count}</b> plazas de usuario, pero hay <b>%{users}</b> usuarios activos en tu cuenta.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Amplía</a> tu plan para cubrir <b>%{users}</b> usuarios o elimina los usuarios inactivos en la <a href="%{settings_url}" class="link font-bold">Configuración</a>.'
   submission_created_by_email_html: '<b>Envío creado</b> por %{email}'
   submission_created_by_email_via_source_html: '<b>Envío creado</b> por %{email} a través de %{source}'
   submission_created_via_source_html: '<b>Envío creado</b> a través de %{source}'
@@ -2238,6 +2248,8 @@ es: &es
     select_field: Seleccionar campo
     select_column: Seleccionar columna
     new_field_mapping: Nuevo mapeo de campo
+    add_mapping: Agregar mapeo
+    variables: Variables
     total_entries: Entradas totales
     upload_csv_or_xlsx_spreadsheet: Subir hoja de cálculo CSV o XLSX
     click_to_upload: Haz clic para subir
@@ -2989,6 +3001,7 @@ it: &it
   hmac_signing_secret: Segreto di firma HMAC
   hmac_signature_header_hint_html: 'Ogni richiesta viene firmata con l''intestazione %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} invii sono stati creati.'
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Questo documento è in fase di elaborazione. Aggiorna la pagina per visualizzare la versione finale."
   sms_length_cant_be_longer_than_120_bytes: "La lunghezza dell'SMS non può superare i 120 byte."
   connected_successfully: Collegamento avvenuto con successo.
   user_nameid_not_found: 'Utente %{nameid} non trovato.'
@@ -3165,6 +3178,9 @@ it: &it
   manage_subscription: Gestisci Abbonamento
   docuseal_version_security_release_is_available: "È disponibile il rilascio di sicurezza DocuSeal v%{version}."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Fai clic qui</a> per vedere le istruzioni e aggiornare la tua app.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Il tuo abbonamento Pro include <b>%{count}</b> posto utente, ma nel tuo account ci sono <b>%{users}</b> utenti attivi.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Aggiorna</a> il tuo piano per coprire <b>%{users}</b> utenti oppure rimuovi gli utenti inattivi dalle <a href="%{settings_url}" class="link font-bold">Impostazioni</a>.'
+    other: 'Il tuo abbonamento Pro include <b>%{count}</b> posti utente, ma nel tuo account ci sono <b>%{users}</b> utenti attivi.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Aggiorna</a> il tuo piano per coprire <b>%{users}</b> utenti oppure rimuovi gli utenti inattivi dalle <a href="%{settings_url}" class="link font-bold">Impostazioni</a>.'
   submission_created_by_email_html: '<b>Invio creato</b> da %{email}'
   submission_created_by_email_via_source_html: '<b>Invio creato</b> da %{email} tramite %{source}'
   submission_created_via_source_html: '<b>Invio creato</b> tramite %{source}'
@@ -3406,6 +3422,8 @@ it: &it
     select_field: Seleziona campo
     select_column: Seleziona colonna
     new_field_mapping: Nuova mappatura del campo
+    add_mapping: Aggiungi mappatura
+    variables: Variabili
     total_entries: Voci totali
     upload_csv_or_xlsx_spreadsheet: Carica un foglio di calcolo CSV o XLSX
     click_to_upload: Clicca per caricare
@@ -4143,6 +4161,7 @@ fr: &fr
   hmac_signing_secret: Secret de signature HMAC
   hmac_signature_header_hint_html: 'Chaque requête est signée avec l''en-tête %{header} : &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: "%{count} soumissions ont été créées."
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Ce document est en cours de traitement. Actualisez la page pour afficher la version finale."
   sms_length_cant_be_longer_than_120_bytes: La longueur du SMS ne peut pas dépasser 120 octets
   connected_successfully: Connecté avec succès.
   user_nameid_not_found: Utilisateur %{nameid} introuvable.
@@ -4319,6 +4338,9 @@ fr: &fr
   manage_subscription: Gérer l’abonnement
   docuseal_version_security_release_is_available: "La mise à jour de sécurité DocuSeal v%{version} est disponible."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Cliquez ici</a> pour voir les instructions et mettre à jour votre application.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Votre abonnement Pro inclut <b>%{count}</b> place d’utilisateur, mais votre compte compte <b>%{users}</b> utilisateurs actifs.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Mettez à niveau</a> votre offre pour couvrir <b>%{users}</b> utilisateurs ou supprimez les utilisateurs inactifs dans les <a href="%{settings_url}" class="link font-bold">Paramètres</a>.'
+    other: 'Votre abonnement Pro inclut <b>%{count}</b> places d’utilisateur, mais votre compte compte <b>%{users}</b> utilisateurs actifs.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Mettez à niveau</a> votre offre pour couvrir <b>%{users}</b> utilisateurs ou supprimez les utilisateurs inactifs dans les <a href="%{settings_url}" class="link font-bold">Paramètres</a>.'
   submission_created_by_email_html: "<b>Soumission créée</b> par %{email}"
   submission_created_by_email_via_source_html: "<b>Soumission créée</b> par %{email} via %{source}"
   submission_created_via_source_html: "<b>Soumission créée</b> via %{source}"
@@ -4557,6 +4579,8 @@ fr: &fr
     select_field: Sélectionner un champ
     select_column: Sélectionner une colonne
     new_field_mapping: Nouveau mappage de champ
+    add_mapping: Ajouter un mappage
+    variables: Variables
     total_entries: Entrées totales
     upload_csv_or_xlsx_spreadsheet: Téléverser un tableur CSV ou XLSX
     click_to_upload: Cliquer pour téléverser
@@ -5307,6 +5331,7 @@ pt: &pt
   hmac_signing_secret: Segredo de assinatura HMAC
   hmac_signature_header_hint_html: 'Cada requisição é assinada com o cabeçalho %{header}: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} submissões foram criadas.'
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Este documento está sendo processado. Atualize a página para ver a versão final."
   sms_length_cant_be_longer_than_120_bytes: O comprimento do SMS não pode ultrapassar 120 bytes
   connected_successfully: Conectado com sucesso.
   user_nameid_not_found: 'Usuário %{nameid} não encontrado.'
@@ -5483,6 +5508,9 @@ pt: &pt
   manage_subscription: Gerenciar Assinatura
   docuseal_version_security_release_is_available: "A versão de segurança DocuSeal v%{version} está disponível."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Clique aqui</a> para ver as instruções e atualizar seu aplicativo.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Sua assinatura Pro inclui <b>%{count}</b> lugar de usuário, mas há <b>%{users}</b> usuários ativos na sua conta.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Atualize</a> seu plano para cobrir <b>%{users}</b> usuários ou remova os usuários inativos nas <a href="%{settings_url}" class="link font-bold">Configurações</a>.'
+    other: 'Sua assinatura Pro inclui <b>%{count}</b> lugares de usuário, mas há <b>%{users}</b> usuários ativos na sua conta.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Atualize</a> seu plano para cobrir <b>%{users}</b> usuários ou remova os usuários inativos nas <a href="%{settings_url}" class="link font-bold">Configurações</a>.'
   submission_created_by_email_html: '<b>Envio criado</b> por %{email}'
   submission_created_by_email_via_source_html: '<b>Envio criado</b> por %{email} via %{source}'
   submission_created_via_source_html: '<b>Envio criado</b> via %{source}'
@@ -5724,6 +5752,8 @@ pt: &pt
     select_field: Selecionar campo
     select_column: Selecionar coluna
     new_field_mapping: Novo mapeamento de campo
+    add_mapping: Adicionar mapeamento
+    variables: Variáveis
     total_entries: Entradas totais
     upload_csv_or_xlsx_spreadsheet: Enviar planilha CSV ou XLSX
     click_to_upload: Clique para enviar
@@ -6474,6 +6504,7 @@ de: &de
   hmac_signing_secret: HMAC-Signaturgeheimnis
   hmac_signature_header_hint_html: 'Jede Anfrage wird mit dem %{header}-Header signiert: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: '%{count} Einreichungen wurden erstellt.'
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Dieses Dokument wird verarbeitet. Aktualisieren Sie die Seite, um die endgültige Version anzuzeigen."
   sms_length_cant_be_longer_than_120_bytes: Die SMS-Länge darf 120 Bytes nicht überschreiten.
   connected_successfully: Erfolgreich verbunden.
   user_nameid_not_found: 'Benutzer %{nameid} nicht gefunden.'
@@ -6650,6 +6681,9 @@ de: &de
   manage_subscription: Abonnement verwalten
   docuseal_version_security_release_is_available: "Das Sicherheitsupdate DocuSeal v%{version} ist verfügbar."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Klicken Sie hier</a>, um die Anleitung anzuzeigen und Ihre App zu aktualisieren.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Ihr Pro-Abonnement umfasst <b>%{count}</b> Benutzerplatz, aber in Ihrem Konto gibt es <b>%{users}</b> aktive Benutzer.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Erweitern</a> Sie Ihren Plan auf <b>%{users}</b> Benutzer oder entfernen Sie inaktive Benutzer in den <a href="%{settings_url}" class="link font-bold">Einstellungen</a>.'
+    other: 'Ihr Pro-Abonnement umfasst <b>%{count}</b> Benutzerplätze, aber in Ihrem Konto gibt es <b>%{users}</b> aktive Benutzer.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Erweitern</a> Sie Ihren Plan auf <b>%{users}</b> Benutzer oder entfernen Sie inaktive Benutzer in den <a href="%{settings_url}" class="link font-bold">Einstellungen</a>.'
   submission_created_by_email_html: '<b>Einreichung erstellt</b> von %{email}'
   submission_created_by_email_via_source_html: '<b>Einreichung erstellt</b> von %{email} über %{source}'
   submission_created_via_source_html: '<b>Einreichung erstellt</b> über %{source}'
@@ -6891,6 +6925,8 @@ de: &de
     select_field: Feld auswählen
     select_column: Spalte auswählen
     new_field_mapping: Neue Feldzuordnung
+    add_mapping: Zuordnung hinzufügen
+    variables: Variablen
     total_entries: Gesamteinträge
     upload_csv_or_xlsx_spreadsheet: CSV- oder XLSX-Tabelle hochladen
     click_to_upload: Klicken Sie, um hochzuladen
@@ -8169,6 +8205,7 @@ nl: &nl
   hmac_signing_secret: HMAC-ondertekeningsgeheim
   hmac_signature_header_hint_html: 'Elk verzoek wordt ondertekend met de %{header}-header: &lt;timestamp&gt;.&lt;sha256&gt;.'
   count_submissions_have_been_created: "%{count} inzendingen zijn aangemaakt."
+  this_document_is_being_processed_refresh_the_page_to_view_the_final_version: "Dit document wordt verwerkt. Vernieuw de pagina om de definitieve versie te bekijken."
   sms_length_cant_be_longer_than_120_bytes: SMS-lengte mag niet langer zijn dan 120 bytes
   connected_successfully: Succesvol verbonden.
   user_nameid_not_found: Gebruiker %{nameid} niet gevonden.
@@ -8345,6 +8382,9 @@ nl: &nl
   manage_subscription: Abonnement beheren
   docuseal_version_security_release_is_available: "Beveiligingsupdate DocuSeal v%{version} is beschikbaar."
   click_here_to_view_the_instructions_and_update_your_app_html: '<a href="%{url}" class="link" target="_blank" rel="noopener noreferrer nofollow">Klik hier</a> om de instructies te bekijken en uw app bij te werken.'
+  your_pro_subscription_includes_count_user_seats_but_there_are_users_active_users_in_your_account_html:
+    one: 'Uw Pro-abonnement omvat <b>%{count}</b> gebruikersplaats, maar er zijn <b>%{users}</b> actieve gebruikers in uw account.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Upgrade</a> uw abonnement naar <b>%{users}</b> gebruikers of verwijder inactieve gebruikers via de <a href="%{settings_url}" class="link font-bold">Instellingen</a>.'
+    other: 'Uw Pro-abonnement omvat <b>%{count}</b> gebruikersplaatsen, maar er zijn <b>%{users}</b> actieve gebruikers in uw account.<br><a href="%{upgrade_url}" class="link font-bold" target="_blank" rel="noopener noreferrer nofollow">Upgrade</a> uw abonnement naar <b>%{users}</b> gebruikers of verwijder inactieve gebruikers via de <a href="%{settings_url}" class="link font-bold">Instellingen</a>.'
   submission_created_by_email_html: "<b>Inzending aangemaakt</b> door %{email}"
   submission_created_by_email_via_source_html: "<b>Inzending aangemaakt</b> door %{email} via %{source}"
   submission_created_via_source_html: "<b>Inzending aangemaakt</b> via %{source}"
@@ -8582,6 +8622,8 @@ nl: &nl
     select_field: Veld selecteren
     select_column: Kolom selecteren
     new_field_mapping: Nieuwe veldkoppeling
+    add_mapping: Koppeling toevoegen
+    variables: Variabelen
     total_entries: Totaal aantal items
     upload_csv_or_xlsx_spreadsheet: CSV- of XLSX-spreadsheet uploaden
     click_to_upload: Klik om te uploaden
